@@ -1,0 +1,11 @@
+[
+   {
+      "question 1":"Which of the following is correct about Services?",
+      "options":[
+         "(a)Angular 2 Services are a set of code that can be shared by different components of an application.",
+         "(b)Angular 2 Services cannot be used across multiple applications.",
+         "(c)Angular 2 Services help to build the applications into many modules.",
+         "(d)All of the above"
+      ]
+   }
+]

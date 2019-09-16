@@ -1,0 +1,13 @@
+#a{
+    background-color: aquamarine;
+}
+
+body {
+    background-image: url("/assets/tv.jpg");
+    background-size: cover;
+    
+    height:50rem;
+  }
+  #ac{
+      margin-top: 5000;
+  }

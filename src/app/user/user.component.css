@@ -1,0 +1,14 @@
+#a{
+    background-color:midnightblue;
+    background-size: cover;
+}
+
+#b{
+    background-color:cornflowerblue;
+}
+#c{
+    background-image:url("/assets/us.jpeg");
+    background-size: cover;
+}
+
+

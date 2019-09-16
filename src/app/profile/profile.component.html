@@ -1,0 +1,73 @@
+<body>
+
+    <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6 mt-5" id="ac">
+            <u><h1 class="text-center text-success">Profile</h1></u>
+           
+     <form #ref="ngForm" >
+    <table class="table table-borderless"  *ngFor="let user of c; let i= index;">   
+          <tr>
+              <td>Name</td>
+              <td>
+                  <input type="text" name="username" [(ngModel)]="user.username" [disabled]="!user.isEditable" ngModel>
+              </td>
+          </tr>
+
+          <tr>
+            <td>Email</td>
+            <td>
+                <input type="text" [(ngModel)]="user.email" name="email" [disabled]="!user.isEditable" ngModel>
+            </td>
+        </tr>
+
+
+          <tr>
+              <td>Mobile Number</td>
+              <td>
+                  <input type="number" pattern="[6-9]{1}[0-9]{9}" [(ngModel)]="user.mobile" name="mobile" [disabled]="!user.isEditable" ngModel>
+              </td>
+          </tr>
+
+          <tr>
+            <td>Date</td>
+            <td>
+                <input type="date" name="dob" [(ngModel)]="user.dob" [disabled]="!user.isEditable" ngModel>
+            </td>
+        </tr>     
+
+          
+
+          
+          <tr>    
+              <td>Address</td>
+              <td>
+                  <input type="text" name="adress" [(ngModel)]="user.adress" [disabled]="!user.isEditable" ngModel>
+              </td>
+          </tr>    
+
+          <tr>
+              <td colspan="2">
+                  <div>
+                      <button  class="btn btn-primary ml-5 pl-5 pr-5" (click)="user.isEditable=!user.isEditable" *ngIf="!user.isEditable">Edit</button>
+                      <button class="btn btn-success ml-5 pl-5 pr-5" type="submit" *ngIf="user.isEditable" (click)="user.isEditable=!user.isEditable" (click)="edit(ref.value)">Save</button>                    
+                      
+                  </div>
+              </td>
+          </tr>
+ 
+    </table>
+</form>
+
+            
+
+        </div>
+
+    </div>
+
+</body>
+
+
+
+
+

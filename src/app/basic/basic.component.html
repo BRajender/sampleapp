@@ -1,0 +1,10 @@
+<div class="container">
+<form #ref=ngForm (ngSubmit)="result(ref.value)">
+    <div *ngFor="let i of examdata">
+        <legend>{{i.question}}</legend>
+        <div *ngFor="let j of opt">
+            <input type="radio" name="options">{{j.answer}}
+        </div>
+    </div>
+</form>
+</div>

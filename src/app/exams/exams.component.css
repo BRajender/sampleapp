@@ -1,0 +1,13 @@
+img:hover{
+   transform:  scale(1.5);
+   opacity: 2;
+}
+
+body {
+   background-image: url("/assets/on.jpg");
+   background-size: cover;
+   
+   height:50rem;
+ }
+
+
